@@ -1,7 +1,7 @@
 # NodeJSNotes
 
 
-1.#What are the data types in JavaScript ?
+1.   #What are the data types in JavaScript ?
 Answer: 
 Primitive Data Types : number, string,boolean,undefined, null,symbol(es6) ,bigint(es11)
 Reference data types: Object, Array,function,Date,Regexp,Map(es6), set(es6)
