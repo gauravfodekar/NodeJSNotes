@@ -355,7 +355,7 @@ In summary:
 
 These methods are handy for manipulating arrays and can be used in various scenarios when you need to modify the content of an array in JavaScript.
 
-13. #  how can I iterate over the object ?
+13. #how can I iterate over the object ?
 Answer: To iterate over the properties of an object in JavaScript, you can use various methods and techniques depending on your specific requirements. Here are some common ways to iterate over an object:
 
 1. **For...In Loop:**
