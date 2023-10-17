@@ -1,17 +1,35 @@
 # NodeJSNotes
 
 
-1.   #What are the data types in JavaScript ?
+1.    # What are the data types in JavaScript ?
 Answer: 
-Primitive Data Types : number, string,boolean,undefined, null,symbol(es6) ,bigint(es11)
-Reference data types: Object, Array,function,Date,Regexp,Map(es6), set(es6)
+Primitive Data Types :
+number, 
+string,
+boolean,
+undefined,
+null,
+symbol(es6) ,
+bigint(es11)
+Reference data types:
+Object, 
+Array,
+function,
+Date,
+Regexp,
+Map(es6),
+set(es6)
 
-2.#What is the difference between primitive and non primitive data types
+2. #  What is the difference between primitive and non primitive data types
 Answer: Data Structure:
-Primitive Data Types: Primitive data types store a single, immutable value. They are simple and atomic, representing basic values.          
-Non-Primitive (Reference) Data Types: Non-primitive data types store references or addresses to complex data structures. They are more versatile and can represent         compound data.
+Primitive Data Types: 
+Primitive data types store a single, immutable value. 
+They are simple and atomic, representing basic values.          
+Non-Primitive (Reference) Data Types:
+Non-primitive data types store references or addresses to complex data structures.
+They are more versatile and can represent         compound data.
 
-    Mutability:
+Mutability:
     
         Primitive Data Types: Primitive data types are immutable, meaning their values cannot be changed once they are created. Any operation that seems to modify a   primitive type actually creates a new value.        
         Non-Primitive (Reference) Data Types: Non-primitive data types are mutable, and you can change their properties or elements without creating a new reference.
@@ -36,7 +54,7 @@ Non-Primitive (Reference) Data Types: Non-primitive data types store references 
         Primitive Data Types: Typically, primitive data types have a fixed size in memory, which is usually small.    
         Non-Primitive (Reference) Data Types: The size of non-primitive data types depends on the data they store and can vary significantly.
         
-4.#what type of variables available in JavaScript? 
+4. # what type of variables available in JavaScript? 
 Answer : In JavaScript, there are three main types of variables:
 
 1. **var (Function-Scoped):** `var` was the original way to declare variables in JavaScript. Variables declared with `var` are function-scoped, which means they are only accessible within the function in which they are declared or globally if declared outside of any function. Variables declared with `var` are also hoisted, which means they are moved to the top of their containing function or global scope during the compilation phase.
@@ -83,9 +101,9 @@ Answer : In JavaScript, there are three main types of variables:
     In addition to these three variable types, JavaScript also has the `global` object (`window` in the browser and `global` in Node.js), which allows you to create global     variables. However, it's generally best practice to avoid creating global variables whenever possible, as they can lead to naming conflicts and make code harder to     maintain. Instead, use `var`, `let`, or `const` to declare variables with appropriate scoping.
 
 
-5.#what is the difference between let cost and var => only two major differences?
+5. #    what is the difference between let cost and var => only two major differences?
 Answer: Block scope and hoisting.
-7.#What is Json object in JavaScript and what are the methods related to this ?
+7. #    What is Json object in JavaScript and what are the methods related to this ?
 Answer: In JavaScript, JSON (JavaScript Object Notation) is a lightweight data interchange format that is used for data serialization and communication between a server and a web application, or between different parts of a program. JSON is a text-based format that is easy for humans to read and write and easy for machines to parse and generate. It is often used to represent structured data, such as objects and arrays.
 
 A JSON object in JavaScript refers to a JavaScript object that adheres to the JSON format. JSON objects are similar to regular JavaScript objects but follow a specific structure:
@@ -143,7 +161,7 @@ To work with JSON in JavaScript, you can use the following methods and functions
 
 These methods allow you to work with JSON data in JavaScript, whether you need to parse JSON strings into JavaScript objects or stringify JavaScript objects into JSON format for communication with APIs or storage.
 
-9.#What kind of operations we can perform on array
+9. #   What kind of operations we can perform on array
 Answer: Arrays in JavaScript are versatile data structures that allow you to store and manipulate collections of values. You can perform various operations on arrays, including but not limited to:
 
 1. **Accessing Elements:**
@@ -231,7 +249,7 @@ Answer: Arrays in JavaScript are versatile data structures that allow you to sto
 
 These are some of the common operations you can perform on arrays in JavaScript. Arrays are essential for working with collections of data and are used extensively in JavaScript programming.
 
-10.#what is difference between find and filter ?
+10. #  what is difference between find and filter ?
 Answer: In JavaScript, both `find()` and `filter()` are array methods used to work with arrays and perform operations on their elements. However, they serve different purposes and have different behaviors:
 
 1. **`find()` Method:**
@@ -337,7 +355,7 @@ In summary:
 
 These methods are handy for manipulating arrays and can be used in various scenarios when you need to modify the content of an array in JavaScript.
 
-13.#how can I iterate over the object ?
+13. #  how can I iterate over the object ?
 Answer: To iterate over the properties of an object in JavaScript, you can use various methods and techniques depending on your specific requirements. Here are some common ways to iterate over an object:
 
 1. **For...In Loop:**
