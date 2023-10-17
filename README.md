@@ -1,15 +1,15 @@
 # NodeJSNotes
 
 
-1.	# What are the data types in JavaScript ?
-Answer: Primitive Data Types : number, string,boolean,undefined, null,symbol(es6) ,bigint(es11)
-        Reference data types: Object, Array,function,Date,Regexp,Map(es6), set(es6)
+1.#What are the data types in JavaScript ?
+Answer: 
+Primitive Data Types : number, string,boolean,undefined, null,symbol(es6) ,bigint(es11)
+Reference data types: Object, Array,function,Date,Regexp,Map(es6), set(es6)
 
-2.	# What is the difference between primitive and non primitive data types
+2.#What is the difference between primitive and non primitive data types
 Answer: Data Structure:
-
-          Primitive Data Types: Primitive data types store a single, immutable value. They are simple and atomic, representing basic values.          
-          Non-Primitive (Reference) Data Types: Non-primitive data types store references or addresses to complex data structures. They are more versatile and can represent           compound data.
+Primitive Data Types: Primitive data types store a single, immutable value. They are simple and atomic, representing basic values.          
+Non-Primitive (Reference) Data Types: Non-primitive data types store references or addresses to complex data structures. They are more versatile and can represent         compound data.
 
     Mutability:
     
@@ -36,7 +36,7 @@ Answer: Data Structure:
         Primitive Data Types: Typically, primitive data types have a fixed size in memory, which is usually small.    
         Non-Primitive (Reference) Data Types: The size of non-primitive data types depends on the data they store and can vary significantly.
         
-4.	# what type of variables available in JavaScript? 
+4.#what type of variables available in JavaScript? 
 Answer : In JavaScript, there are three main types of variables:
 
 1. **var (Function-Scoped):** `var` was the original way to declare variables in JavaScript. Variables declared with `var` are function-scoped, which means they are only accessible within the function in which they are declared or globally if declared outside of any function. Variables declared with `var` are also hoisted, which means they are moved to the top of their containing function or global scope during the compilation phase.
@@ -83,9 +83,9 @@ Answer : In JavaScript, there are three main types of variables:
     In addition to these three variable types, JavaScript also has the `global` object (`window` in the browser and `global` in Node.js), which allows you to create global     variables. However, it's generally best practice to avoid creating global variables whenever possible, as they can lead to naming conflicts and make code harder to     maintain. Instead, use `var`, `let`, or `const` to declare variables with appropriate scoping.
 
 
-5.	# what is the difference between let cost and var => only two major differences?
+5.#what is the difference between let cost and var => only two major differences?
 Answer: Block scope and hoisting.
-7.	# What is Json object in JavaScript and what are the methods related to this ?
+7.#What is Json object in JavaScript and what are the methods related to this ?
 Answer: In JavaScript, JSON (JavaScript Object Notation) is a lightweight data interchange format that is used for data serialization and communication between a server and a web application, or between different parts of a program. JSON is a text-based format that is easy for humans to read and write and easy for machines to parse and generate. It is often used to represent structured data, such as objects and arrays.
 
 A JSON object in JavaScript refers to a JavaScript object that adheres to the JSON format. JSON objects are similar to regular JavaScript objects but follow a specific structure:
@@ -143,7 +143,7 @@ To work with JSON in JavaScript, you can use the following methods and functions
 
 These methods allow you to work with JSON data in JavaScript, whether you need to parse JSON strings into JavaScript objects or stringify JavaScript objects into JSON format for communication with APIs or storage.
 
-9.	# What kind of operations we can perform on array
+9.#What kind of operations we can perform on array
 Answer: Arrays in JavaScript are versatile data structures that allow you to store and manipulate collections of values. You can perform various operations on arrays, including but not limited to:
 
 1. **Accessing Elements:**
@@ -231,7 +231,7 @@ Answer: Arrays in JavaScript are versatile data structures that allow you to sto
 
 These are some of the common operations you can perform on arrays in JavaScript. Arrays are essential for working with collections of data and are used extensively in JavaScript programming.
 
-10.	# what is difference between find and filter ?
+10.#what is difference between find and filter ?
 Answer: In JavaScript, both `find()` and `filter()` are array methods used to work with arrays and perform operations on their elements. However, they serve different purposes and have different behaviors:
 
 1. **`find()` Method:**
@@ -271,7 +271,7 @@ In summary:
 Consider your specific use case when choosing between these methods. If you need to find a single element, use `find()`. If you need to extract multiple elements that meet a condition, use `filter()`. Both methods are useful for different scenarios when working with arrays in JavaScript.
 
 
-12.	# what is different between push and pop and shift and unshift ?
+12.#what is different between push and pop and shift and unshift ?
 Answer: In JavaScript, `push()`, `pop()`, `shift()`, and `unshift()` are methods used to add or remove elements from an array. They operate on the beginning or end of an array and have different behaviors:
 
 1. **`push()` Method:**
@@ -337,7 +337,7 @@ In summary:
 
 These methods are handy for manipulating arrays and can be used in various scenarios when you need to modify the content of an array in JavaScript.
 
-13.	# how can I iterate over the object ?
+13.#how can I iterate over the object ?
 Answer: To iterate over the properties of an object in JavaScript, you can use various methods and techniques depending on your specific requirements. Here are some common ways to iterate over an object:
 
 1. **For...In Loop:**
@@ -428,7 +428,7 @@ Answer: To iterate over the properties of an object in JavaScript, you can use v
 
 These methods provide flexibility when iterating over the properties of an object in JavaScript, allowing you to choose the one that best fits your needs based on the structure of your object and the specific data you want to access.
 
-14.	# how can I delete the element of array ?
+14.#how can I delete the element of array ?
 Answer : You can delete an element from an array in JavaScript using several methods, depending on your requirements. Here are some common ways to delete elements from an array:
 
 1. **Using the `splice()` Method:**
@@ -483,7 +483,7 @@ Answer : You can delete an element from an array in JavaScript using several met
 
 It's important to choose the method that best fits your specific use case. The `splice()`, `pop()`, and `shift()` methods are commonly used for direct removal of elements, while `filter()` is useful for creating a new array with elements removed based on a condition. The `delete` operator is less commonly used for deleting array elements, as it leaves holes in the array and may lead to unexpected behavior.
 
-15.	# what is shallow copy and deep copy of object and array ?
+15.#what is shallow copy and deep copy of object and array ?
 Answer: In JavaScript, when you create a copy of an object or an array, you can make either a shallow copy or a deep copy, depending on how the copy is created and the structure of the original object or array. Here's the difference between shallow copy and deep copy:
 
 1. **Shallow Copy:**
@@ -524,7 +524,7 @@ Answer: In JavaScript, when you create a copy of an object or an array, you can 
 
 It's important to choose between shallow copy and deep copy based on your specific use case and requirements. Shallow copies are generally more efficient in terms of memory and performance but may lead to unexpected behavior if you're not aware of the shared references. Deep copies, while safer in terms of isolation, can be less efficient, especially for deeply nested structures. When creating a deep copy, you may need to implement custom copying logic or use a library that provides deep copying functionality, depending on the complexity of your data.
 
-16.	# how can I achieve shallow copy of array and object?
+16.#how can I achieve shallow copy of array and object?
 Answer: To achieve a shallow copy of an array or an object in JavaScript, you can use various methods and techniques. Here are common ways to create shallow copies of arrays and objects:
 
 **Shallow Copy of an Array:**
@@ -583,7 +583,7 @@ Answer: To achieve a shallow copy of an array or an object in JavaScript, you ca
 
 All of these methods will create a shallow copy of the array or object. It's important to note that a shallow copy only duplicates the top-level structure, and if the array or object contains nested objects or arrays, those nested elements will still be shared between the original and the copy (shallowly). To create a deep copy that duplicates nested objects and arrays as well, you would need to implement custom copying logic or use a library like `JSON.parse(JSON.stringify(obj))`, as mentioned earlier.
 
-17.	# how can I achieve deep copy of array or object ?
+17.#how can I achieve deep copy of array or object ?
 answer: Creating a deep copy of an array or object in JavaScript, which duplicates not only the top-level structure but also all nested objects and arrays, can be more complex than creating a shallow copy. Here are some methods to achieve a deep copy:
 
 **Deep Copy of an Array:**
@@ -681,8 +681,8 @@ answer: Creating a deep copy of an array or object in JavaScript, which duplicat
 
 Both of these methods for deep copying objects and arrays provide you with a new object or array that is entirely independent of the original, including all nested structures. However, keep in mind that deep copying can be computationally expensive, especially for complex objects or arrays with many nested elements.
 
-18.	# what is ES6 ? 
-19.	# give me 6 features which are provided by the ES6?
+18.#what is ES6 ? 
+19.#give me 6 features which are provided by the ES6?
 Answer: ES6, short for ECMAScript 2015, is the sixth edition of the ECMAScript standard, which is the specification for the scripting language that JavaScript is based on. ES6 introduced many new features and improvements to the JavaScript language, making it more powerful, expressive, and easier to work with. It was a significant update to the language and has had a profound impact on modern JavaScript development.
 
   Some of the key features and enhancements introduced in ES6 include:
@@ -718,7 +718,7 @@ Answer: ES6, short for ECMAScript 2015, is the sixth edition of the ECMAScript s
 
 
  
-20.	# what is rest operator and spread operator?
+20.#what is rest operator and spread operator?
 Answer: The rest operator (`...`) and the spread operator (`...`) are two related JavaScript features introduced in ECMAScript 2015 (ES6). While they share the same syntax, they serve different purposes and are used in different contexts. Let's explore each of them:
 
 **Rest Operator (`...`):**
@@ -792,7 +792,7 @@ Here are some common use cases for the spread operator:
 The rest operator and the spread operator are powerful features in JavaScript that provide flexibility when working with arrays, function arguments, and objects. Understanding when and how to use them can greatly improve your code's readability and maintainability.
 
 
-21.	# how can I define functions in JavaScript list the number of ways ?
+21.#how can I define functions in JavaScript list the number of ways ?
 Answer: In JavaScript, you can define functions in several ways to suit different needs and coding styles. Here are the main ways to define functions in JavaScript:
 
 1. **Function Declaration:**
@@ -904,7 +904,7 @@ Answer: In JavaScript, you can define functions in several ways to suit differen
 These are the main ways to define functions in JavaScript, and you can choose the appropriate method based on your specific requirements and coding style.
 
 
-22.	# what is hosting in JavaScript ? 
+22.#what is hosting in JavaScript ? 
 Answer: In JavaScript, "hoisting" is a behavior in which variable and function declarations are moved to the top of their containing scope during the compilation phase, which is before the code is executed. This means that regardless of where you declare variables or functions within a scope, they are conceptually moved to the top of that scope by the JavaScript engine.
 
 There are two main aspects of hoisting:
@@ -954,7 +954,7 @@ There are two main aspects of hoisting:
 
 Hoisting is a behavior that can sometimes lead to unexpected results or bugs if developers are not aware of it. It's a good practice to declare and initialize variables at the top of their scope and to define functions before they are called to make your code more readable and to avoid potential issues related to hoisting.
 
-23.	# how can I avoid hosting in JavaScript ?
+23.#how can I avoid hosting in JavaScript ?
 Answer: Hoisting is a fundamental behavior in JavaScript, and you cannot completely avoid it. However, you can write your code in a way that minimizes the potential issues associated with hoisting and makes your code more predictable. Here are some best practices to follow to avoid common pitfalls related to hoisting:
 
 1. **Declare Variables and Functions at the Top of Their Scope:**
@@ -1021,7 +1021,7 @@ Answer: Hoisting is a fundamental behavior in JavaScript, and you cannot complet
 By following these best practices and being aware of hoisting behavior in JavaScript, you can write code that is less prone to hoisting-related bugs and easier to understand and maintain. While you can't completely avoid hoisting, you can use it to your advantage by organizing your code to be more readable and predictable.
 
 
-24.	# what is the difference between function expression and function declaration ?
+24.#what is the difference between function expression and function declaration ?
 Answer : In JavaScript, there are two main ways to define functions: function declarations and function expressions. These two approaches have some key differences in terms of how they are defined, hoisted, and when they can be used.
 
 Here are the main differences between function declarations and function expressions:
@@ -1104,7 +1104,7 @@ Here are the main differences between function declarations and function express
 
 In summary, the main difference between function declarations and function expressions is how they are hoisted and when they can be accessed in your code. Function declarations are hoisted and can be called before their actual definition, while function expressions are not hoisted in the same way and must be defined before they are used. The choice between them depends on your specific use case and coding style.
 
-25.	# what is immediately invoked function ?
+25.#what is immediately invoked function ?
 Answer: An Immediately Invoked Function Expression (IIFE) is a JavaScript function that is defined and executed immediately after its creation. It's a common design pattern in JavaScript used for encapsulation, creating private variables, and preventing pollution of the global scope.
 
 Here's the basic syntax of an IIFE:
@@ -1145,7 +1145,7 @@ privateFunction(); // Error: privateFunction is not defined
 
 IIFEs are commonly used in scenarios where you want to create isolated code blocks, avoid polluting the global scope, and ensure that certain variables and functions are not accessible outside of their intended scope. They were especially popular before ES6 introduced block-scoped variables (`let` and `const`) and block-scoped functions, as IIFEs were a way to achieve variable encapsulation in JavaScript. However, with ES6 and the availability of block-scoped variables, the need for IIFEs has diminished in some cases.
 
-26.	# what is anonymous function ?
+26.#what is anonymous function ?
 Answer: An anonymous function in JavaScript is a function that does not have a name. Instead of being assigned a name like a regular function, anonymous functions are typically defined inline where they are needed. They are often used in situations where a short, one-time-use function is required.
 
 Here's the basic syntax of an anonymous function:
@@ -1198,7 +1198,7 @@ numbers.forEach((num) => {
 Arrow functions have become a popular choice for writing concise and anonymous functions in modern JavaScript.
 
 
-27.	# what is fat arrow function and where we usually use it?
+27.#what is fat arrow function and where we usually use it?
 Answer: A fat arrow function, also known as an arrow function, is a concise way to define functions in JavaScript introduced in ECMAScript 6 (ES6). It provides a more compact and readable syntax for creating functions compared to traditional function expressions. The "fat arrow" notation (`=>`) is used to define arrow functions, hence the name.
 
 Here's the basic syntax of an arrow function:
@@ -1270,7 +1270,7 @@ Common use cases for arrow functions:
 
 Arrow functions are a powerful and concise addition to JavaScript, making code more readable and expressive for certain scenarios. However, it's important to be mindful of their behavior regarding `this` binding, as they may not be suitable for all use cases, especially when dealing with complex object-oriented code.
 
-28.	# what is higher / first order function ?
+28.#what is higher / first order function ?
 Answer: In programming, a higher-order function (HOF) is a function that can take one or more functions as arguments, or it can return another function as its result. In other words, a higher-order function treats functions as first-class citizens, allowing them to be manipulated and used in various ways just like any other data type.
 
 Here are the two primary characteristics of a higher-order function:
@@ -1323,7 +1323,7 @@ In this example, the `multiplier` function is a higher-order function because it
 Higher-order functions are a powerful concept in functional programming and are commonly used for tasks like mapping, filtering, reducing, and composing functions. They allow for more flexible and reusable code by promoting the separation of concerns and the composition of smaller, specialized functions into larger, more complex ones.
 
 
-29.	# why functions are called as a first class citizen in JavaScript ?
+29.#why functions are called as a first class citizen in JavaScript ?
 Answer : In JavaScript, functions are considered first-class citizens because they exhibit the following characteristics, which are similar to how other data types, like numbers or strings, are treated:
 
 1. **Functions can be assigned to variables:** You can assign a function to a variable just like you would with other data types. This allows you to give functions names, store them in variables, and reference them.
@@ -1376,7 +1376,7 @@ Answer : In JavaScript, functions are considered first-class citizens because th
 
 The term "first-class citizen" implies that functions in JavaScript have equal standing with other data types and can be used in the same ways. This property of functions in JavaScript is fundamental to the language's ability to support functional programming paradigms and allows for powerful techniques like higher-order functions, closures, and function composition.
 
-30.	# How can I check data type of a variable is there any method available for that ?
+30.#How can I check data type of a variable is there any method available for that ?
 Answer: In JavaScript, you can check the data type of a variable using the `typeof` operator. The `typeof` operator returns a string that represents the data type of the given variable or expression.
 
 Here's how you can use the `typeof` operator:
@@ -1432,7 +1432,7 @@ console.log(person instanceof Person); // true
 
 These methods can provide more specific and accurate type checking for certain situations.
 
-31.	# what is curing in JavaScript ?
+31.#what is curing in JavaScript ?
 Answer: In JavaScript, "currying" is a functional programming concept that involves transforming a function that takes multiple arguments into a series of functions, each of which takes a single argument. Currying allows you to create specialized functions from a more general one by partially applying the arguments.
 
 Here's a simple example of currying in JavaScript:
@@ -1470,7 +1470,7 @@ Currying has several benefits and use cases:
 
 It's important to note that JavaScript does not natively support currying as a built-in feature. You need to implement currying manually or use libraries like Ramda or lodash/fp that provide currying functions. Additionally, arrow functions in JavaScript can be particularly convenient for creating curried functions due to their concise syntax.
 
-32.	# what is closures in JavaScript give me simple example of it ?
+32.#what is closures in JavaScript give me simple example of it ?
 Answer: In JavaScript, a closure is a function that has access to variables from its outer (enclosing) lexical scope, even after that outer function has finished executing. Closures are a powerful and important concept in JavaScript, allowing for data encapsulation, maintaining state, and creating private variables.
 
 Here's a simple example of a closure:
@@ -1516,7 +1516,7 @@ In this example, the `createCounter` function returns an `increment` function th
 
 Closures are a fundamental part of JavaScript's behavior and are commonly used for various programming patterns, including callback functions, event handling, and module patterns, to name a few. Understanding closures is crucial for writing clean and maintainable JavaScript code.
 
-33.	# what is the use of reduce function ?
+33.#what is the use of reduce function ?
 Answer: The `reduce()` function is a powerful and versatile higher-order function in JavaScript that is used for reducing an array to a single value. It iterates over the elements of an array and applies a specified function to combine them into a single result. The result can be of any data type, not just numbers, making `reduce()` a flexible tool for various tasks.
 
 Here's the basic syntax of the `reduce()` function:
@@ -1567,7 +1567,7 @@ Here are a few examples to illustrate its use:
 
 `reduce()` is a powerful function that can handle a wide range of tasks by customizing the callback function to suit your specific needs. It is a fundamental tool for functional programming and data transformation in JavaScript.
 
-34.	# how can I iterate over strings?
+34.#how can I iterate over strings?
 Answer: You can iterate over strings in JavaScript using various methods and loops. Here are some common approaches to iterate over the characters in a string:
 
 1. **Using a For Loop:**
@@ -1628,7 +1628,7 @@ Answer: You can iterate over strings in JavaScript using various methods and loo
 
 Each of these methods allows you to iterate over the characters in a string, and you can choose the one that best suits your coding style and specific requirements.
 
-35.	# What is the difference between map and foreach method?
+35.#What is the difference between map and foreach method?
 Answer: The `map()` and `forEach()` methods are both used for iterating over arrays in JavaScript, but they serve different purposes and have different behaviors.
 
 Here are the key differences between `map()` and `forEach()`:
@@ -1671,7 +1671,7 @@ Here are the key differences between `map()` and `forEach()`:
 
 In summary, `map()` is used for transforming an array into a new array based on a callback function and is suitable when you want to maintain immutability. On the other hand, `forEach()` is used for iterating over an array and applying a function to each element without creating a new array, making it suitable for side effects and when you don't need a modified array. The choice between them depends on your specific use case and whether you need to produce a new array or simply perform actions on the existing elements.
 
-36.	# how can I check if value is undefined or not ?
+36.#how can I check if value is undefined or not ?
 Answer: To check if a value is `undefined` in JavaScript, you can use a few different methods depending on your preferences and the specific scenario. Here are some common ways to check for `undefined`:
 
 1. **Using the `typeof` Operator:**
@@ -1739,7 +1739,7 @@ Answer: To check if a value is `undefined` in JavaScript, you can use a few diff
 
 Any of these methods can be used to check if a value is `undefined` in JavaScript. The choice of method depends on your coding style and the specific context in which you want to perform the check.
 
-37.	# What is constructor function?
+37.	#What is constructor function?
 Aswner:In JavaScript, a constructor function is a regular function that is used to create and initialize objects. Constructor functions are typically used as blueprints for creating multiple objects of the same "type" or "class." These objects are often referred to as instances of the constructor function.
 
 Here's the basic syntax for defining a constructor function:
@@ -1780,9 +1780,9 @@ person3.sayHello(); // "Hello, my name is Charlie and I'm 35 years old."
 
 Constructor functions are a fundamental part of JavaScript's object-oriented programming (OOP) capabilities. They provide a way to create objects with shared properties and methods, making it possible to model real-world entities and behaviors in your code.
 
-38. #	what is new keyword?
+38. #what is new keyword?
 
-39. #	what is the difference between new keyword and object.create method?
+39. #what is the difference between new keyword and object.create method?
 Answer: Both the `new` keyword and the `Object.create()` method in JavaScript are used for creating objects, but they work in slightly different ways and serve different purposes. Here are the key differences between them:
 
 1. **Usage:**
@@ -1915,7 +1915,7 @@ Here's how to define and use a class in JavaScript:
 The `class` syntax provides a more structured and familiar way to work with object-oriented programming concepts in JavaScript. It simplifies the creation of constructor functions, prototype methods, and inheritance hierarchies, making your code more organized and readable. It's widely used in modern JavaScript development.
 ------------------------------------------------------------------------------------------------------
 
-# What is node JS ?/
+#What is node JS ?/
 Answer: Node.js is an open-source, server-side runtime environment built on the JavaScript V8 engine developed by Google. It allows you to execute JavaScript code on the server, enabling the development of server-side and network applications. Node.js is designed for building scalable and high-performance applications, particularly web servers and other network-related software.
 
 Key characteristics and features of Node.js include:
@@ -1980,11 +1980,11 @@ Imagine Node.js as a single waiter in a busy restaurant. Instead of handling one
 
 So, Node.js is like a super-efficient waiter that can manage multiple tables at a restaurant without getting overwhelmed, and that's what makes it great for building high-performance and scalable applications, especially web servers and real-time applications.
 
-4 #what is the latest nodejs version and stable nodejs version? 
+4#what is the latest nodejs version and stable nodejs version? 
 
-5 #what is the stable version of npm?
+5#what is the stable version of npm?
 
-6 #what is callbacks in node JS
+6#what is callbacks in node JS
 Answer In Node.js, a callback is a function that is passed as an argument to another function, and it is typically used to handle asynchronous operations. Callbacks are a fundamental concept in Node.js and are commonly used to manage tasks that take time to complete, such as reading files, making network requests, or querying databases.
 
 Here's how callbacks work in Node.js:
