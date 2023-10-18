@@ -2256,7 +2256,7 @@ Answer : "Promise.race" and "Promise.any." These methods have similar-sounding n
 
 To summarize, "Promise.race" resolves with the result of the first promise that completes (either successfully or with an error), while "Promise.any" resolves with the result of the first promise to complete successfully, or it rejects with all the rejection reasons if all promises are rejected. These methods are used when you want to deal with multiple promises concurrently and respond to their outcomes based on specific requirements.
 
-11 #give me simple syntax for creating a promise?
+11. # give me simple syntax for creating a promise?
 Creating a simple Promise in JavaScript involves using the `Promise` constructor, which takes a single argument—a function with two parameters, `resolve` and `reject`. Here's the basic syntax for creating a Promise:
 
 ```javascript
@@ -2786,7 +2786,7 @@ Remember that effective error handling is crucial for the reliability and mainta
 
 In summary, `splice` modifies the original array by removing, replacing, or adding elements at specific positions, while `slice` creates a new array containing a copy of elements from the original array without modifying the original array. The key difference is whether the operation affects the original array or creates a new array.
 
-25 #what is mean by middleware in nodejs?
+25. # what is mean by middleware in nodejs?
 In the context of Node.js and web applications, middleware refers to a set of functions or code that runs during the request-response cycle of an HTTP request. Middleware functions have access to the request and response objects and can perform various tasks, such as processing the request, modifying the response, and controlling the flow of the application. Middleware plays a central role in Express.js, a popular web framework for Node.js, but it can also be used in other Node.js web applications.
 
 Here are some key points about middleware in Node.js:
@@ -2824,7 +2824,7 @@ In this example, the middleware logs information about incoming requests before 
 
 Middleware is a powerful concept in Node.js and web development because it allows you to structure your application's code in a modular and organized way, making it easier to manage the different components of your application.
 
-26 #what are the types of middlewares?
+26. # what are the types of middlewares?
 In Node.js web applications, particularly when using a framework like Express, there are two main types of middleware: application-level middleware and route-specific middleware. These two types serve different purposes and can be used to handle various tasks during the request-response cycle.
 
 1. **Application-Level Middleware:**
@@ -2870,7 +2870,7 @@ In Node.js web applications, particularly when using a framework like Express, t
 
 These two types of middleware are often used in combination to structure and organize your application's code. Application-level middleware provides global handling and setup, while route-specific middleware allows you to customize behavior for specific routes or groups of routes. This separation of concerns makes your code more maintainable and easier to understand.
 
-27 #what is mean by ORM?
+27. # what is mean by ORM?
 ORM stands for Object-Relational Mapping, and it refers to a programming technique used in software development to bridge the gap between object-oriented programming languages and relational databases. The primary goal of ORM is to enable developers to work with databases using object-oriented code, making it easier to interact with, manipulate, and retrieve data from the database.
 
 Here are some key points about ORM:
@@ -2894,7 +2894,7 @@ Popular ORM frameworks for various programming languages include:
 
 While ORM systems offer many advantages, they are not always the best solution for every project. In some cases, direct SQL or NoSQL database interactions may be more appropriate, depending on the project's requirements and performance considerations. Nevertheless, ORM can be a powerful tool for speeding up development and maintaining clean, object-oriented code when working with databases.
 
-28 #can we run row queries in ORM?
+28. # can we run row queries in ORM?
 In Object-Relational Mapping (ORM) frameworks, you typically work with high-level abstractions and object-oriented code to interact with databases. While ORMs are designed to abstract the underlying database operations and provide a more intuitive way to work with data, they often allow you to execute raw SQL queries when necessary.
 
 Most ORM frameworks provide mechanisms for running raw SQL queries alongside their high-level abstractions. Here's how you can typically run raw SQL queries in an ORM:
@@ -2919,7 +2919,7 @@ It's important to be cautious when using raw SQL queries, especially when it com
 
 While raw SQL queries can be helpful for complex or database-specific operations, it's generally recommended to use the ORM's high-level abstractions for most tasks, as they offer a more consistent and database-agnostic way of working with data. Raw SQL should be used when it's the most appropriate and efficient solution for a specific use case.
 
-29 # what is transaction?
+29. # what is transaction?
 In the context of databases, a transaction refers to a sequence of one or more database operations that are treated as a single, indivisible unit of work. These operations can include inserting, updating, deleting, or querying data in a database. The concept of a transaction ensures data consistency, integrity, and reliability. It follows the ACID properties, which stand for Atomicity, Consistency, Isolation, and Durability:
 
 1. **Atomicity:** Transactions are atomic, meaning they are treated as an all-or-nothing operation. If any part of a transaction fails (e.g., due to an error or exception), the entire transaction is rolled back, and the database remains in its original state. This ensures that the database is not left in an inconsistent state.
@@ -2942,7 +2942,7 @@ Here's an example of a simple transaction in a database:
 
 Transactions are crucial in situations where multiple users or processes access and modify the same database simultaneously. They ensure data integrity and consistency, even in high-concurrency environments. Transaction support is a fundamental feature of relational database management systems (RDBMS) like PostgreSQL, MySQL, Oracle, and SQL Server.
 
-30 #what is use of HTTP and https module?
+30. # what is use of HTTP and https module?
 The `http` and `https` modules in Node.js are used to create and manage HTTP and HTTPS (HTTP Secure) servers and clients, allowing you to handle web communication. Here's how these modules are commonly used:
 
 **1. `http` Module:**
@@ -2991,7 +2991,7 @@ The `http` and `https` modules in Node.js are used to create and manage HTTP and
 
 In summary, the `http` and `https` modules are fundamental to building web applications, APIs, and services in Node.js. The `http` module is used for non-secure HTTP communication, while the `https` module provides secure communication with TLS/SSL encryption. Whether you're creating servers or making HTTP requests, these modules enable you to handle web communication within your Node.js applications.
 
-31 #Create simple server by using http model?
+31. # Create simple server by using http model?
 Certainly! Here's a simple example of creating an HTTP server using the `http` module in Node.js:
 
 ```javascript
@@ -3028,7 +3028,7 @@ node simple-http-server.js
 
 You can then access the server in your web browser or through an HTTP client at `http://localhost:8080/` to see the "Hello, World!" message.
 
-32 #What is the difference between path and URL module?
+32. # What is the difference between path and URL module?
 The Node.js `path` and `url` modules serve different purposes and are used for different tasks when working with file paths and URLs.
 
 **1. `path` Module:**
@@ -3057,7 +3057,7 @@ The `url` module is useful when you need to work with web addresses, parse query
 
 In summary, the `path` module is for working with file and directory paths, while the `url` module is for working with web URLs. The two modules are distinct and serve different purposes in Node.js, although they both involve handling strings that represent locations, they are typically used for different types of locations (file paths vs. web URLs).
 
-34 #which external package is used for using a third party APIs?
+34. # which external package is used for using a third party APIs?
 To interact with third-party APIs in a Node.js application, you can use the popular `axios` package, which is a promise-based HTTP client for making HTTP requests. It simplifies making requests to external APIs, handling responses, and managing request and response data.
 
 Here's how you can use `axios` to make a simple GET request to a third-party API:
@@ -3092,7 +3092,7 @@ The `axios.get()` method sends a GET request to the specified URL, and you can h
 
 You can use `axios` to make various types of HTTP requests, including GET, POST, PUT, DELETE, and more. It also allows you to send request headers, query parameters, and request payloads as needed when interacting with third-party APIs. It's a versatile and widely used package for handling API requests in Node.js applications.
 
-35 #what is session and cookies?
+35.  # what is session and cookies?
 **Session and Cookies** are two related concepts commonly used in web development to manage user state and maintain data across multiple requests and responses in web applications. They are often used for implementing user authentication, user-specific data storage, and maintaining user sessions.
 
 Here's an overview of each concept:
@@ -3113,7 +3113,7 @@ Here's an overview of each concept:
 
 In summary, cookies are a mechanism for storing small pieces of data on the user's browser, while a session is a higher-level concept used to manage user interactions and store user-specific data across multiple HTTP requests. Cookies are often used to identify and associate sessions with users, allowing the server to maintain a user's state and data as they navigate through a web application. Sessions help keep track of user-specific information and provide a way to maintain context and state during a user's visit to a website.
 
-36 # what is JWT web token authorization?
+36. # what is JWT web token authorization?
 JWT, which stands for JSON Web Token, is a widely used method for implementing stateless and secure user authentication and authorization in web applications and APIs. JWT is a compact, self-contained format for representing claims to be transferred between two parties, typically the server and the client.
 
 Here's an overview of how JWT token-based authorization works:
@@ -3139,7 +3139,7 @@ Key benefits of JWT token-based authorization:
 
 However, it's crucial to manage JWT tokens securely and ensure that the private keys for signing tokens are kept secret. Additionally, JWT tokens are not suitable for storing sensitive data, as they can be decoded (although not tampered with) on the client side. Sensitive data should be stored on the server and retrieved as needed using the token's claims to identify the user.
 
-37 #explain the simplest flow of authorization by using JWT token?
+37. # explain the simplest flow of authorization by using JWT token?
 The simplest flow of authorization using JWT (JSON Web Token) typically involves the following steps:
 
 1. **User Authentication:**
@@ -3194,7 +3194,7 @@ fetch("https://api.example.com/protected-resource", {
 
 In this flow, the JWT token serves as proof of authentication, allowing the server to authorize the user to access protected resources without the need to maintain session state on the server. The token's claims convey information about the user's identity and privileges, enabling secure and stateless authorization.
 
-38 #which external module we used for JWT web token authorization?
+38. # which external module we used for JWT web token authorization?
 For JWT (JSON Web Token) authorization in a Node.js application, you can use the `jsonwebtoken` package, which is a widely used library for creating, verifying, and decoding JWT tokens. This package simplifies the process of working with JWT tokens, making it easy to implement user authentication and authorization.
 
 Here's how you can use the `jsonwebtoken` package for JWT token authorization:
@@ -3247,7 +3247,7 @@ Here's how you can use the `jsonwebtoken` package for JWT token authorization:
 
 The `jsonwebtoken` package simplifies the process of generating and validating JWT tokens, allowing you to implement user authentication and authorization in your Node.js application. It is widely used and well-documented, making it a popular choice for implementing JWT-based authentication.
 
-39 #which external module we used for session and cookies authorization?
+39. # which external module we used for session and cookies authorization?
 To manage sessions and cookies for user authentication and authorization in a Node.js application, you typically use external modules such as `express-session` and `cookie-parser` in combination with the popular Express.js framework. These modules help you handle sessions and cookies effectively. Here's how to use them:
 
 1. **express-session:** This module is used to manage user sessions in your Express.js application. It helps you create, store, and manage user sessions on the server. You can install it using npm or yarn:
@@ -3289,7 +3289,7 @@ To manage sessions and cookies for user authentication and authorization in a No
 
 By using these modules, you can store and manage user sessions on the server, as well as handle cookies that are used to maintain session data or user-specific information on the client side. Together, `express-session` and `cookie-parser` help you implement user authentication and authorization mechanisms while handling sessions and cookies in an Express.js application.
 
-40 #what is the difference between session - cookies and JW wave token authorization?
+40. # what is the difference between session - cookies and JW wave token authorization?
 Session-Cookies and JWT (JSON Web Token) authorization are two distinct approaches to managing user authentication and maintaining user state in web applications. Here's a comparison of these two approaches:
 
 **Session-Cookies:**
@@ -3324,7 +3324,7 @@ Here are some key considerations:
 
 In practice, you may choose one or both methods depending on your application's architecture, use cases, and security requirements. For example, you might use JWT for user authentication and cookies for session management or stateful data storage. The choice will depend on your specific needs and the trade-offs you are willing to make.
 
-41 # For which purpose we are using dot env file?
+41. # For which purpose we are using dot env file?
 The `.env` (dot env) file is used to store configuration variables and sensitive information as environment variables in your application. It is commonly used to separate configuration settings from your source code, making it easier to manage and maintain your application's configuration across different environments (e.g., development, testing, production) without exposing sensitive data.
 
 Here are some common use cases for the `.env` file:
@@ -3375,7 +3375,7 @@ Here's how you can use the `dotenv` library:
 
 Using the `.env` file in this way allows you to maintain a clean and secure configuration management process in your application.
 
-42 #which method or file structure we used for saving the sensitive data like password URL and passphrase?
+42. # which method or file structure we used for saving the sensitive data like password URL and passphrase?
 When you need to save sensitive data like passwords, URLs, and passphrases in your Node.js application, it's crucial to follow secure practices to protect this information. Here's a recommended approach:
 
 **1. Use Environment Variables:**
@@ -3404,7 +3404,7 @@ When you need to save sensitive data like passwords, URLs, and passphrases in yo
 
 By following these practices, you can better protect sensitive data in your Node.js application. Remember that security is an ongoing concern, and it's essential to stay informed about best practices and emerging security threats. Additionally, consider implementing security audits and code reviews to identify and address potential security vulnerabilities.
 
-43 #what is settimeout function give simple syntax for it ? 
+43. # what is settimeout function give simple syntax for it ? 
 ANswer:The `setTimeout` function is a built-in JavaScript function used to schedule the execution of a specified function (or a code snippet) after a specified delay, measured in milliseconds. It's commonly used for tasks that should occur after a certain time delay, such as animations, updating data, or triggering events.
 
 Here's the simple syntax for the `setTimeout` function:
@@ -3426,7 +3426,7 @@ setTimeout(function() {
 
 In this example, the function within `setTimeout` will run after waiting for 2 seconds (2000 milliseconds).
 
-46 #why nodejs called as a event driven language?
+46. # why nodejs called as a event driven language?
 Answer: Node.js is often referred to as an "event-driven" or "event-based" platform, not a language, and this characterization is due to its architecture and the way it handles I/O (Input/Output) operations. Node.js is actually a runtime environment for executing JavaScript code on the server side. The key reasons why Node.js is considered event-driven are as follows:
 
 1. **Non-Blocking I/O**: Node.js is built on a non-blocking, asynchronous I/O model. When Node.js performs I/O operations, it doesn't wait for the operation to complete before moving on to the next task. Instead, it initiates the I/O operation and registers a callback function to be executed when the operation is finished. This allows Node.js to efficiently handle multiple concurrent connections without blocking the execution of other code.
@@ -3441,7 +3441,7 @@ Answer: Node.js is often referred to as an "event-driven" or "event-based" platf
 
 All these features and design choices make Node.js well-suited for building applications that need to handle a large number of concurrent connections, such as web servers and real-time applications like chat applications or online games. The event-driven architecture of Node.js allows it to efficiently manage these connections and respond to events as they occur, which is why it's often called an event-driven platform.
 
-47 #is node JS a single thread ?
+47. # is node JS a single thread ?
 Answer: Node.js is often associated with the concept of a single-threaded event loop, which is a fundamental part of its architecture. However, it's important to clarify that while Node.js uses a single-threaded event loop for managing asynchronous operations, it can still take advantage of multi-threading and parallelism for certain tasks through features like Worker Threads and the libuv library.
 
 Here's a breakdown of Node.js' threading model:
@@ -3454,7 +3454,7 @@ Here's a breakdown of Node.js' threading model:
 
 In summary, Node.js is single-threaded in terms of executing JavaScript code and managing the event loop. However, it can leverage multi-threading and parallelism for specific tasks, such as CPU-bound operations, by using Worker Threads and the underlying libuv library. This allows Node.js to make efficient use of multi-core processors while maintaining its non-blocking, event-driven, and single-threaded execution model for most of its operations.
 
-47 #how we can achieve multithreading in node JS ?
+47. # how we can achieve multithreading in node JS ?
 Answer: In Node.js, you can achieve multithreading by using the "Worker Threads" module. This module allows you to create and run separate JavaScript threads in parallel to the main event loop thread, enabling you to perform CPU-bound tasks concurrently without blocking the event loop. Here's how you can achieve multithreading in Node.js using Worker Threads:
 
 1. **Import the Worker Threads module**:
@@ -3566,7 +3566,7 @@ In this example, the main thread creates a worker thread, and both threads commu
 
 Keep in mind that while Worker Threads enable multithreading for CPU-bound tasks, they may introduce some complexity in terms of inter-thread communication and synchronization, so they should be used judiciously when needed.
 
-48 #if node yes is a single thread language how can we are achieving asynchronous operations?
+48. # if node yes is a single thread language how can we are achieving asynchronous operations?
 Answer: In Node.js, you can achieve multithreading by using the "Worker Threads" module. This module allows you to create and run separate JavaScript threads in parallel to the main event loop thread, enabling you to perform CPU-bound tasks concurrently without blocking the event loop. Here's how you can achieve multithreading in Node.js using Worker Threads:
 
 1. **Import the Worker Threads module**:
@@ -3678,7 +3678,7 @@ In this example, the main thread creates a worker thread, and both threads commu
 
 Keep in mind that while Worker Threads enable multithreading for CPU-bound tasks, they may introduce some complexity in terms of inter-thread communication and synchronization, so they should be used judiciously when needed.
 
-48 #Give me 3 inbuilt packages which is used for security purpose ?
+48. # Give me 3 inbuilt packages which is used for security purpose ?
 Node.js provides several built-in packages that are commonly used for security purposes. Here are three such packages:
 
 1. **crypto**: The `crypto` module provides cryptographic functionality, allowing you to perform various encryption, decryption, and hashing operations. It's essential for securing data, generating secure tokens, and implementing authentication mechanisms. Common use cases include hashing passwords, encrypting sensitive information, and generating secure random numbers.
@@ -3735,7 +3735,7 @@ Node.js provides several built-in packages that are commonly used for security p
 
 These packages play a vital role in enhancing the security of your Node.js applications by providing encryption, secure communication, and protection against common web application vulnerabilities. It's essential to use them to safeguard your applications from security threats.
 
-49 #give me 3 external packages for security purpose?
+49. # give me 3 external packages for security purpose?
 There are many external packages for enhancing security in Node.js applications. Here are three widely used security-related packages:
 
 1. **jsonwebtoken**: The `jsonwebtoken` package allows you to create and verify JSON Web Tokens (JWTs). JWTs are commonly used for authentication and authorization in web applications. They are digitally signed and can be used to securely transmit information between the client and server.
@@ -3776,7 +3776,7 @@ There are many external packages for enhancing security in Node.js applications.
 
 These external packages are widely used in Node.js applications to improve security and protect against common security threats and vulnerabilities. You can add them to your project using npm or another package manager to enhance the security of your application.
 
-50 #what is mean by rest APIs?
+50. # what is mean by rest APIs?
 REST APIs, which stands for Representational State Transfer Application Programming Interfaces, are a type of web service that follows a set of architectural principles and constraints. REST is an architectural style for designing networked applications and is often used to create web services that allow different software applications to communicate with each other over the internet.
 
 Here are the key principles and concepts associated with REST APIs:
@@ -3801,7 +3801,7 @@ Here are the key principles and concepts associated with REST APIs:
 
 REST APIs are widely used in web development because of their simplicity and scalability. They are commonly used for building web services, allowing different applications, whether they're web-based or not, to interact with each other over HTTP in a structured and consistent manner.
 
-51 #give me 3 principles of rest API?
+51. # give me 3 principles of rest API?
 Certainly! Here are three key principles of REST APIs:
 
 1. **Stateless Communication**:
@@ -3824,12 +3824,12 @@ Certainly! Here are three key principles of REST APIs:
 
 Adhering to these principles helps ensure that REST APIs are scalable, easy to understand, and can be used across a wide range of applications and platforms, making them a popular choice for building web services.
 
-51 #what is the difference between get post put and delete API?
+51. # what is the difference between get post put and delete API?
 Purpose: The POST method is used to submit data to be processed by a resource identified by the URI. It typically results in the creation of a new resource or the execution of a specific action on the server. It is not idempotent, meaning multiple identical POST requests may have different effects on the server.
 
 Example: Creating a new user account, submitting a comment on a blog post, or adding an item to a shopping cart.
 
-52 #what kind of payload allowed in below four types of API?
+52. # what kind of payload allowed in below four types of API?
 The type of payload allowed in the four main HTTP methods (GET, POST, PUT, DELETE) in RESTful APIs is as follows:
 
 1. **GET**:
@@ -3854,7 +3854,7 @@ The type of payload allowed in the four main HTTP methods (GET, POST, PUT, DELET
 
 It's important to note that the usage of request payloads can vary depending on the specific API, use case, and server implementation. While POST, PUT, and even DELETE can include request payloads, GET is generally designed for requests that don't include payloads, as it's meant for read-only operations. Additionally, the structure and format of request payloads should be defined by the API's documentation and conform to the data format the server expects.
 
-53 #How to work on unit test cases?
+53. # How to work on unit test cases?
 In Node.js, you can work on unit test cases using various testing frameworks and libraries. One of the most popular testing frameworks for Node.js is Mocha, which, when combined with assertion libraries like Chai, provides a robust testing environment. Here's a step-by-step guide on how to work on unit test cases in Node.js using Mocha and Chai:
 
 1. **Setup Your Project**:
@@ -3918,7 +3918,7 @@ In Node.js, you can work on unit test cases using various testing frameworks and
 
 Mocha and Chai are just one combination of testing frameworks and libraries for Node.js. There are other options like Jest, Jasmine, and more, each with its own features and advantages. The choice of tools may depend on your specific requirements and preferences.
 
-54 #What is express js?
+54. # What is express js?
 Express.js, often simply referred to as Express, is a minimal and flexible web application framework for Node.js. It is one of the most popular and widely used frameworks in the Node.js ecosystem. Express provides a set of features and tools for building web and API applications quickly and easily.
 
 Key features and characteristics of Express.js include:
@@ -3945,7 +3945,7 @@ Key features and characteristics of Express.js include:
 
 Express.js is often used as the foundation for building web servers, RESTful APIs, single-page applications (SPAs), and various types of web applications. Its flexibility allows developers to choose the specific components and libraries they need to build their application, making it a versatile framework for Node.js web development.
 
-55 #list three advantages of using express JS?
+55. # list three advantages of using express JS?
 Express.js offers several advantages when used for web application development. Here are three key advantages of using Express.js:
 
 1. **Simplicity and Minimalism**:
@@ -3962,7 +3962,7 @@ Express.js offers several advantages when used for web application development. 
 
 Overall, Express.js is a versatile and well-established framework that offers flexibility, simplicity, and a robust ecosystem, making it an excellent choice for building web applications and RESTful APIs in Node.js.
 
-56 #create simple server application by using express JS?
+56. # create simple server application by using express JS?
 Certainly! Here's an example of a simple Express.js server application:
 
 1. First, make sure you have Node.js installed on your system. If it's not installed, you can download and install it from the official website: [Node.js](https://nodejs.org/).
@@ -4023,7 +4023,7 @@ Certainly! Here's an example of a simple Express.js server application:
 
 Congratulations! You've created a simple Express.js server that responds to a basic route. You can build upon this foundation to create more complex web applications or RESTful APIs using Express.js.
 
-57 #what kind of methods available in expressions?
+57. # what kind of methods available in expressions?
 In Express.js, there are several HTTP methods (or HTTP verbs) available for defining routes and handling requests. These methods correspond to the standard HTTP methods and help you define the behavior of your web application or API. The primary HTTP methods in Express.js include:
 
 1. **GET**:
@@ -4064,7 +4064,7 @@ In Express.js, there are several HTTP methods (or HTTP verbs) available for defi
 
 In Express.js, you can use these HTTP methods to define routes and specify how the server should respond to different types of requests. Each method corresponds to a specific route in your application, and you can define the associated request handling logic using middleware functions and route handlers.
 
-58 #dot create server dot listen dot use dot gate dot post dot put dot delete dot route what is the purpose of these methods in express?
+58. # dot create server dot listen dot use dot gate dot post dot put dot delete dot route what is the purpose of these methods in express?
 In Express.js, the methods you mentioned (`createServer`, `listen`, `use`, `get`, `post`, `put`, `delete`, and `route`) are used to create, configure, and manage an Express application. Each of these methods serves a specific purpose in defining routes, middleware, and setting up the server. Let's take a closer look at their individual purposes:
 
 1. **createServer**:
@@ -4120,7 +4120,7 @@ In Express.js, the methods you mentioned (`createServer`, `listen`, `use`, `get`
 
 These methods collectively enable you to create and configure an Express application, define routes, specify route handlers, apply middleware, and start the server to listen for incoming HTTP requests. Express.js is a flexible and powerful framework for building web applications and APIs, and these methods are foundational to its functionality.
 
-60 #how can I set middleware at application level ?
+60. # how can I set middleware at application level ?
 In Express.js, you can set middleware at the application level using the `app.use()` method. Middleware set at the application level is executed for all routes and requests that pass through the Express application. Here's how you can set middleware at the application level:
 
 1. First, create an instance of an Express application:
@@ -4185,7 +4185,7 @@ app.listen(port, () => {
 
 In this example, the `myLogger` middleware logs request information for all routes in the application. This is a simple example, but middleware can be more complex, allowing you to perform various tasks such as authentication, validation, and more at the application level.
 
-61 #how can I set middleware at route level ?
+61. # how can I set middleware at route level ?
 In Express.js, you can set middleware at the route level by applying middleware functions to specific routes or groups of routes. This allows you to define middleware that only affects certain routes rather than applying it to the entire application. Here's how you can set middleware at the route level:
 
 1. Create an instance of an Express application and define your custom middleware functions:
@@ -4237,7 +4237,7 @@ When you make a request to the `/special` route, the `routeMiddleware` will exec
 
 This approach allows you to apply different middleware functions to specific routes, providing flexibility in handling requests based on the route's requirements.
 
-62 #What is the purpose of passport package? 
+62. # What is the purpose of passport package? 
 Passport is a popular authentication middleware package for Node.js and Express applications. Its primary purpose is to simplify the process of adding user authentication and authorization to your web applications. Passport provides a flexible, modular, and easy-to-use framework for handling various authentication strategies, including local authentication, social authentication (OAuth), and more.
 
 Key purposes and features of the Passport package include:
@@ -4273,7 +4273,7 @@ Key purposes and features of the Passport package include:
 
 By providing a unified and consistent approach to authentication, Passport simplifies the process of implementing user authentication in your web applications, regardless of the authentication method you choose. It's a widely adopted package in the Node.js and Express ecosystem, making it a reliable choice for securing your applications.
 
-63 #how can we achieve authorization by using passport package
+63. # how can we achieve authorization by using passport package
 To achieve authorization in your Node.js and Express application using the Passport package, you can follow these general steps:
 
 1. **Install Passport and Relevant Strategies**:
@@ -4367,7 +4367,7 @@ To achieve authorization in your Node.js and Express application using the Passp
 
 By following these steps, you can use Passport to implement authentication and authorization in your Node.js and Express application. Remember to adapt the code and strategies to your specific authentication and authorization requirements. Passport provides flexibility to accommodate various authentication methods and use cases.
 
-64 #how can we create custom middleware and use it?
+64. # how can we create custom middleware and use it?
 Creating custom middleware in Express.js allows you to add functionality or processing to the request-response cycle. Custom middleware functions are defined as functions that take three parameters: `req` (request object), `res` (response object), and `next` (a function to pass control to the next middleware in the stack). Here's how to create and use custom middleware in Express:
 
 1. **Create a Custom Middleware Function**:
@@ -4438,7 +4438,7 @@ Custom middleware can be used for tasks like authentication, logging, request pa
 
 Remember that middleware is executed in the order it's applied, so the sequence in which you add middleware functions can be significant, especially when handling request and response data.
 
-65 #different types of design patterns?
+65.  # different types of design patterns?
 Design patterns are reusable solutions to common software design problems. They provide a way to structure code in a way that promotes maintainability, scalability, and readability. There are several categories of design patterns, each addressing specific aspects of software design. Here are some of the main types of design patterns:
 
 1. **Creational Patterns**:
@@ -4485,7 +4485,7 @@ Design patterns are reusable solutions to common software design problems. They 
 
 These are just a few of the design patterns that developers use to solve common design problems. By understanding and applying these patterns appropriately, you can write more efficient, maintainable, and scalable code. The choice of pattern depends on the specific problem you're trying to solve and the context of your application.
 
-66 #explain little bit about Singleton design pattern ?
+66. # explain little bit about Singleton design pattern ?
 The Singleton design pattern is a creational pattern that ensures a class has only one instance and provides a global point of access to that instance. It's particularly useful when you want to limit the number of instances of a class to just one, ensuring that there's a single point of control over that instance. The Singleton pattern is commonly used in scenarios where a single point of coordination or management is necessary, such as managing a configuration, a database connection, or a logging system.
 
 Key characteristics of the Singleton pattern:
@@ -4529,7 +4529,7 @@ In this example:
 
 Singletons are used in various contexts, such as managing configuration settings, database connections, caching systems, thread pools, and more, where it's crucial to ensure that only one instance exists to maintain control, consistency, and resource efficiency.
 
-67 #explain little bit about factory design pattern?
+67. # explain little bit about factory design pattern?
 The Factory design pattern is a creational pattern that provides an interface for creating objects, but it allows subclasses to alter the type of objects that will be created. In essence, it abstracts the process of object creation and delegates the responsibility of determining which class to instantiate to its subclasses. This pattern promotes loose coupling and flexibility in your code by decoupling the client code from the specific class it instantiates.
 
 Key components and characteristics of the Factory pattern:
@@ -4609,7 +4609,7 @@ In this example:
 
 The Factory pattern is valuable in scenarios where the client code needs to create objects, but the exact class of the object to create is determined at runtime or when the client code should be decoupled from the specific classes it instantiates. It promotes code reusability and flexibility in object creation.
 
-68 #What is the structure of JWT web token what three things are included there?
+68. # What is the structure of JWT web token what three things are included there?
 A JSON Web Token (JWT) is a compact and self-contained way to represent information between two parties. It is structured as a string consisting of three parts: a header, a payload, and a signature. These three parts are separated by dots (`.`), and together they form the complete JWT.
 
 The structure of a JWT can be described as follows:
@@ -4648,7 +4648,7 @@ SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
 
 In practice, JWTs are commonly used for authentication and authorization, allowing a user to prove their identity and permissions to a server in a secure and tamper-evident manner. The server can verify the JWT using the provided signature and extract information from the payload to make access control decisions.
 
-69 #what is radis cache?
+69. # what is radis cache?
 Redis (Remote Dictionary Server) is an open-source, in-memory data structure store that can be used as a cache, message broker, and more. When Redis is used as a cache, it's often referred to as "Redis cache." Redis is known for its exceptional speed and versatility, making it an excellent choice for caching frequently accessed data in web applications and improving performance.
 
 Here are key characteristics and features of Redis as a cache:
@@ -4695,7 +4695,7 @@ client.del('myKey');
 
 In this example, we create a Redis client, set a key-value pair in the cache with a TTL of 1 hour, retrieve the value from the cache, and then delete the key when it's no longer needed. This is a simple illustration of how Redis can be used as a cache in a Node.js application.
 
-70 # how to store data in redis cache?
+70. # how to store data in redis cache?
 If you are using the `redis` library in Node.js (not `ioredis`), you can store data in Redis using the following steps:
 
 1. Install the `redis` library if you haven't already:
@@ -4752,7 +4752,7 @@ const client = redis.createClient({
 
 This example demonstrates the basic usage for storing and retrieving simple key-value pairs using the `redis` library. Depending on your application's requirements, you may need to explore more advanced features and data structures offered by Redis.
 
-72 # how to send email ?
+72. # how to send email ?
 You can send emails in Node.js using various email sending libraries. One of the most commonly used libraries is `nodemailer`. Here's a step-by-step guide on how to send emails in Node.js using `nodemailer`:
 
 1. **Install the `nodemailer` library**:
@@ -4814,7 +4814,7 @@ You can send emails in Node.js using various email sending libraries. One of the
 
 That's it! You've sent an email in Node.js using the `nodemailer` library. You can customize the email content, add attachments, and use more advanced features provided by `nodemailer` as needed for your specific use case.
 
-74 #how to send messages in node js ?
+74. # how to send messages in node js ?
 
 
 
